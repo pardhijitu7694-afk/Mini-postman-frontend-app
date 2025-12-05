@@ -1,4 +1,4 @@
-.app-container {
+/* .app-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
@@ -118,4 +118,95 @@ button:disabled {
 iframe {
   border: 1px solid #ddd;
   width: 100%;
+} */
+
+
+/* ✅ Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .app-container {
+    padding: 1.5rem;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .controls h2 {
+    font-size: 1.1rem;
+  }
+
+  .buttons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .buttons button {
+    margin-left: 0;
+    flex: 1;
+  }
+
+  textarea {
+    font-size: 0.95rem;
+  }
+}
+
+/* ✅ Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  .app-container {
+    padding: 1rem;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+
+  textarea {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  button {
+    width: 100%;
+    padding: 0.75rem;
+  }
+
+  .controls {
+    padding: 0.75rem;
+  }
+
+  .code-display {
+    font-size: 0.8rem;
+    max-height: 400px;
+  }
+}
+
+/* ✅ Small Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.25rem;
+  }
+
+  .controls h2 {
+    font-size: 1rem;
+  }
+
+  .preview {
+    padding: 0.75rem;
+  }
+
+  iframe {
+    height: 300px;
+  }
 }
